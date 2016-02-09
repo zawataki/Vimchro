@@ -1,2 +1,2 @@
 # Vimrome
-Behave like the Vimperator on Chrome.
+This is tool for behave like the Vimperator on Chrome.
