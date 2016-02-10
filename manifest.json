@@ -1,0 +1,13 @@
+{
+  "name": "Vimrome",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Browsing like Vim.",
+  "content_scripts": [
+    {
+      "matches": ["http://*.jp/*"],
+      "js": ["jquery-2.1.4.min.js", "test.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
