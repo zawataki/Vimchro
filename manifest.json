@@ -5,7 +5,7 @@
   "description": "Browsing like Vim.",
   "content_scripts": [
     {
-      "matches": ["http://*.jp/*"],
+      "matches": ["<all_urls>"],
       "js": ["jquery-2.1.4.min.js", "test.js"],
       "run_at": "document_idle"
     }
