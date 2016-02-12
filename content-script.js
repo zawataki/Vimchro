@@ -8,7 +8,7 @@ $(function(){
     isInsertMode = false;
   });
 
-	$(window).keydown(function(e){
+  $(window).keydown(function(e){
     var n = 10;
 
     if ( !isInsertMode ) {
