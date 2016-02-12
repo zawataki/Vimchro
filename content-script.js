@@ -12,7 +12,7 @@ $(function(){
     var n = 10;
     var isNeedCancel = true;
 
-    if ( !isInsertMode ) {
+    if ( !isInsertMode && !e.altKey && !e.ctrlKey && !e.shiftKey ) {
       switch ( String.fromCharCode(e.keyCode) ) {
         case 'H':
           window.scrollBy( n * -1, 0 );
