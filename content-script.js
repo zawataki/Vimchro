@@ -8,8 +8,9 @@ $(function(){
     isInsertMode = false;
   });
 
-  $(window).keydown(function(e){
+  window.addEventListener( "keydown", (function(e){
     var n = 10;
+    var isNeedCancel = true;
 
     if ( !isInsertMode ) {
       switch ( String.fromCharCode(e.keyCode) ) {
@@ -25,8 +26,16 @@ $(function(){
         case 'L':
           window.scrollBy( n, 0 );
           break;
+        default:
+          isNeedCancel = false;
+          break;
+      }
+
+      if ( isNeedCancel ) {
+        e.preventDefault();
+        e.stopPropagation();
       }
     }
-  });
+  }), true );
 });
 
