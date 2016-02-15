@@ -55,6 +55,17 @@ $(function(){
             break;
         }
       }
+      else if ( !e.altKey && !e.ctrlKey && e.shiftKey ) {
+        switch ( String.fromCharCode(e.keyCode) ) {
+          case 'G':
+            window.scroll( $(window).scrollLeft(), $(document).height() );
+            break;
+          default:
+            isNeedCancel = false;
+            inputtedStr = "";
+            break;
+        }
+      }
       else if ( !e.altKey && !e.ctrlKey && !e.shiftKey ) {
         switch ( String.fromCharCode(e.keyCode) ) {
           case 'H':
