@@ -4,7 +4,8 @@
   "version": "0.0.1",
   "description": "Browsing like Vim.",
   "permissions": [
-    "tabs"
+    "tabs",
+    "storage"
   ],
   "background": {
     "scripts": ["js/background.js"],
@@ -16,5 +17,14 @@
       "js": ["js/jquery-2.1.4.min.js", "js/jquery.noty.packaged.min.js", "js/content-script.js"],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "commands": {
+    "MoveNextTab": {
+      "suggested_key": {
+        "default": "Ctrl+N",
+        "mac": "Command+N"
+      },
+      "description": "Send 'MoveNextTab' event to the extension"
+    }
+  }
 }

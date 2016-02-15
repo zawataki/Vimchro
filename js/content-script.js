@@ -1,12 +1,40 @@
 const KEY_ESC = 27;
 const KEY_INSERT = 45;
+var isIgnoreMode;
+var notify = null;
+
+function SwitchNotification() {
+  if ( isIgnoreMode ) {
+    notify = noty({text: "Ignore All keys (Press &lt;Shift-Esc&gt; or &lt;Insert&gt; to exit)"});
+  }
+  else if ( notify != null ) {
+    notify.close();
+    notify = null;
+  }
+}
+
+chrome.storage.onChanged.addListener(function(changes, namespace) {
+  if ( namespace == "local" ) {
+    if ( changes.isIgnoreMode ) {
+      isIgnoreMode = changes.isIgnoreMode.newValue;
+      SwitchNotification();
+    }
+  }
+});
 
 $(function(){
-
   var isInsertMode = false;
-  var isIgnoreMode = false;
   var inputtedStr = "";
-  var notify;
+
+  chrome.storage.local.get("isIgnoreMode", function(item) {
+    if ( item.isIgnoreMode === undefined ) {
+      chrome.storage.local.set({'isIgnoreMode': false}, function(){});
+    }
+    else {
+      isIgnoreMode = item.isIgnoreMode;
+      SwitchNotification();
+    }
+  });
 
   $("input").focus(function(){
     isInsertMode = true;
@@ -20,12 +48,7 @@ $(function(){
 
     if ( (e.shiftKey && e.keyCode == KEY_ESC) || e.keyCode == KEY_INSERT ) {
       isIgnoreMode = !isIgnoreMode;
-      if ( isIgnoreMode ) {
-        notify = noty({text: "Ignore All keys (Press &lt;Shift-Esc&gt; or &lt;Insert&gt; to exit)"});
-      }
-      else {
-        notify.close();
-      }
+      chrome.storage.local.set({'isIgnoreMode': isIgnoreMode}, function(){});
 
       e.preventDefault();
       e.stopPropagation();
@@ -54,6 +77,9 @@ $(function(){
             break;
           case 'I':
             history.forward();
+            break;
+          case 'P':
+            chrome.runtime.sendMessage({cmd: "movePrevTab"});
             break;
           default:
             isNeedCancel = false;
