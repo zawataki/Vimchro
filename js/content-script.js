@@ -5,6 +5,7 @@ $(function(){
 
   var isInsertMode = false;
   var isIgnoreMode = false;
+  var inputtedStr = "";
   var notify;
 
   $("input").focus(function(){
@@ -28,6 +29,7 @@ $(function(){
 
       e.preventDefault();
       e.stopPropagation();
+      inputtedStr = "";
       return;
     }
 
@@ -49,6 +51,7 @@ $(function(){
             break;
           default:
             isNeedCancel = false;
+            inputtedStr = "";
             break;
         }
       }
@@ -66,13 +69,24 @@ $(function(){
           case 'L':
             window.scrollBy( n, 0 );
             break;
+          case 'G':
+            if ( inputtedStr == 'G' ) {
+              window.scroll( $(window).scrollLeft(), 0 );
+              inputtedStr = "";
+            }
+            else {
+              inputtedStr = 'G';
+            }
+            break;
           default:
             isNeedCancel = false;
+            inputtedStr = "";
             break;
         }
       }
       else {
         isNeedCancel = false;
+        inputtedStr = "";
       }
 
       if ( isNeedCancel ) {
