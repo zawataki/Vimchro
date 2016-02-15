@@ -98,6 +98,9 @@ $(function(){
           case 'D':
             chrome.runtime.sendMessage({cmd: "removeTab"});
             break;
+          case 'R':
+            location.reload( true );
+            break;
           default:
             isNeedCancel = false;
             inputtedStr = "";
