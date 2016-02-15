@@ -31,23 +31,48 @@ $(function(){
       return;
     }
 
-    if ( !isInsertMode && !isIgnoreMode && !e.altKey && !e.ctrlKey && !e.shiftKey ) {
-      switch ( String.fromCharCode(e.keyCode) ) {
-        case 'H':
-          window.scrollBy( n * -1, 0 );
-          break;
-        case 'J':
-          window.scrollBy( 0, n );
-          break;
-        case 'K':
-          window.scrollBy( 0, n * -1 );
-          break;
-        case 'L':
-          window.scrollBy( n, 0 );
-          break;
-        default:
-          isNeedCancel = false;
-          break;
+    if ( !isInsertMode && !isIgnoreMode ) {
+      if ( !e.altKey && e.ctrlKey && !e.shiftKey ) {
+        var h = window.innerHeight;
+        switch ( String.fromCharCode(e.keyCode) ) {
+          case 'F':
+            window.scrollBy( 0, h );
+            break;
+          case 'B':
+            window.scrollBy( 0, h * -1 );
+            break;
+          case 'D':
+            window.scrollBy( 0, h / 2 );
+            break;
+          case 'U':
+            window.scrollBy( 0, (h / 2) * -1 );
+            break;
+          default:
+            isNeedCancel = false;
+            break;
+        }
+      }
+      else if ( !e.altKey && !e.ctrlKey && !e.shiftKey ) {
+        switch ( String.fromCharCode(e.keyCode) ) {
+          case 'H':
+            window.scrollBy( n * -1, 0 );
+            break;
+          case 'J':
+            window.scrollBy( 0, n );
+            break;
+          case 'K':
+            window.scrollBy( 0, n * -1 );
+            break;
+          case 'L':
+            window.scrollBy( n, 0 );
+            break;
+          default:
+            isNeedCancel = false;
+            break;
+        }
+      }
+      else {
+        isNeedCancel = false;
       }
 
       if ( isNeedCancel ) {
