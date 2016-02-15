@@ -1,4 +1,5 @@
 const KEY_ESC = 27;
+const KEY_INSERT = 45;
 
 $(function(){
 
@@ -16,10 +17,10 @@ $(function(){
     var n = 10;
     var isNeedCancel = true;
 
-    if ( e.shiftKey && e.keyCode == KEY_ESC ) {
+    if ( (e.shiftKey && e.keyCode == KEY_ESC) || e.keyCode == KEY_INSERT ) {
       isIgnoreMode = !isIgnoreMode;
       if ( isIgnoreMode ) {
-        notify = noty({text: "Ignore All keys (Press &lt;Shift-Esc&gt; to exit)"});
+        notify = noty({text: "Ignore All keys (Press &lt;Shift-Esc&gt; or &lt;Insert&gt; to exit)"});
       }
       else {
         notify.close();
