@@ -60,6 +60,12 @@ $(function(){
           case 'G':
             $(window).scrollTop( $(document).height() );
             break;
+          case 'H':
+            history.back();
+            break;
+          case 'L':
+            history.forward();
+            break;
           default:
             isNeedCancel = false;
             inputtedStr = "";
