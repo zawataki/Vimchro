@@ -1,6 +1,10 @@
+const KEY_ESC = 27;
+
 $(function(){
 
   var isInsertMode = false;
+  var isIgnoreMode = false;
+  var notify;
 
   $("input").focus(function(){
     isInsertMode = true;
@@ -12,7 +16,21 @@ $(function(){
     var n = 10;
     var isNeedCancel = true;
 
-    if ( !isInsertMode && !e.altKey && !e.ctrlKey && !e.shiftKey ) {
+    if ( e.shiftKey && e.keyCode == KEY_ESC ) {
+      isIgnoreMode = !isIgnoreMode;
+      if ( isIgnoreMode ) {
+        notify = noty({text: "Ignore All keys (Press &lt;Shift-Esc&gt; to exit)"});
+      }
+      else {
+        notify.close();
+      }
+
+      e.preventDefault();
+      e.stopPropagation();
+      return;
+    }
+
+    if ( !isInsertMode && !isIgnoreMode && !e.altKey && !e.ctrlKey && !e.shiftKey ) {
       switch ( String.fromCharCode(e.keyCode) ) {
         case 'H':
           window.scrollBy( n * -1, 0 );
