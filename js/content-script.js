@@ -49,6 +49,12 @@ $(function(){
           case 'U':
             window.scrollBy( 0, (h / 2) * -1 );
             break;
+          case 'O':
+            history.back();
+            break;
+          case 'I':
+            history.forward();
+            break;
           default:
             isNeedCancel = false;
             inputtedStr = "";
