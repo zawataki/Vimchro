@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Vimrome",
+  "name": "Vimc",
   "version": "0.0.1",
   "description": "Browsing like Vim.",
   "content_scripts": [
