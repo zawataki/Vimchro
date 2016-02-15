@@ -89,6 +89,9 @@ $(function(){
               inputtedStr = 'G';
             }
             break;
+          case 'D':
+            chrome.runtime.sendMessage({cmd: "removeTab"});
+            break;
           default:
             isNeedCancel = false;
             inputtedStr = "";

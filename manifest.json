@@ -3,6 +3,13 @@
   "name": "Vimc",
   "version": "0.0.1",
   "description": "Browsing like Vim.",
+  "permissions": [
+    "tabs"
+  ],
+  "background": {
+    "scripts": ["js/background.js"],
+    "persistent": false
+  },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
