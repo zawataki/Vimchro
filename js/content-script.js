@@ -58,7 +58,7 @@ $(function(){
       else if ( !e.altKey && !e.ctrlKey && e.shiftKey ) {
         switch ( String.fromCharCode(e.keyCode) ) {
           case 'G':
-            window.scroll( $(window).scrollLeft(), $(document).height() );
+            $(window).scrollTop( $(document).height() );
             break;
           default:
             isNeedCancel = false;
@@ -82,7 +82,7 @@ $(function(){
             break;
           case 'G':
             if ( inputtedStr == 'G' ) {
-              window.scroll( $(window).scrollLeft(), 0 );
+              $(window).scrollTop( 0 );
               inputtedStr = "";
             }
             else {
