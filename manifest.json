@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Vimc",
+  "name": "Vimchro",
   "version": "0.0.1",
   "description": "Browsing like Vim.",
   "permissions": [
