@@ -27,7 +27,7 @@ $(function(){
   var inputtedStr = "";
 
   chrome.storage.local.get("isIgnoreMode", function(item) {
-    if ( item.isIgnoreMode === undefined ) {
+    if ( typeof item.isIgnoreMode === "undefined" ) {
       chrome.storage.local.set({'isIgnoreMode': false}, function(){});
     }
     else {
