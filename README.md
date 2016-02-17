@@ -1,5 +1,6 @@
 # Vimchro
-This is Chrome extension for browsing like Vim.
+This is Chrome extensions for browsing like Vim.
+This extensions override default shortcut of Chrome.
 
 # Available key bindings
 ## Scroll
@@ -29,7 +30,7 @@ This is Chrome extension for browsing like Vim.
 |---|---|
 |d|Close tab|
 |Ctrl + p|Go to the previous tab|
-|Ctrl + n|Go to the next tab <br> To use this keybind, need setting|
+|Ctrl + n|Go to the next tab. <br> To use this keybind, need setting.|
 
 # Other
 |Key|Action|
