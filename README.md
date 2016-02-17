@@ -21,10 +21,8 @@ You can disable temporary this extensions, if you press &lt;Shift + Esc&gt; or &
 ## Moving browsing history
 |Key|Action|
 |---|---|
-|Shift + h|Move backward through the browsing history|
-|Ctrl + o|Move backward through the browsing history|
-|Shift + l|Move forward through the browsing history|
-|Ctrl + i|Move forward through the browsing history|
+|&lt;Shift + h&gt; or &lt;Ctrl + o&gt;|Move backward through the browsing history|
+|&lt;Shift + l&gt; or &lt;Ctrl + i&gt;|Move forward through the browsing history|
 
 ## Tab
 |Key|Action|
@@ -37,3 +35,4 @@ You can disable temporary this extensions, if you press &lt;Shift + Esc&gt; or &
 |Key|Action|
 |---|---|
 |r|Reload page|
+|&lt;Shift + Esc&gt; or &lt;Insert&gt;|Disable temporary this extensions|
