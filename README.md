@@ -2,6 +2,7 @@
 This is Chrome extension for browsing like Vim.
 
 # Available key bindings
+## Scroll
 |Key|Action|
 |---|---|
 |h|Scroll to the left by 10 pixel|
@@ -14,7 +15,23 @@ This is Chrome extension for browsing like Vim.
 |Ctrl + b|Scroll up by one page|
 |gg|Scroll up to top of page|
 |Shift + g|Scroll down to bottom of page|
+
+## Moving browsing history
+|Key|Action|
+|---|---|
 |Shift + h|Move backward through the browsing history|
+|Ctrl + o|Move backward through the browsing history|
 |Shift + l|Move forward through the browsing history|
+|Ctrl + i|Move forward through the browsing history|
+
+## Tab
+|Key|Action|
+|---|---|
 |d|Close tab|
+|Ctrl + p|Go to the previous tab|
+|Ctrl + n|Go to the next tab|
+
+# Other
+|Key|Action|
+|---|---|
 |r|Reload page|
