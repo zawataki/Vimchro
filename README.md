@@ -1,5 +1,5 @@
 # Vimchro
-This is Chrome extensions for browsing like Vim.
+This is Chrome extensions for browsing like Vim.  
 This extensions override default shortcut of Chrome.
 
 # Available key bindings
