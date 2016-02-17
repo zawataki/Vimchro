@@ -1,7 +1,7 @@
 # Vimchro
 This is Chrome extensions for browsing like Vim.  
 This extensions override default shortcut of Chrome.  
-You can disable temporary this extensions, if you press &lt;Shift + Esc&gt; or &lt;Insert&gt; key.
+You can disable temporary this extensions, if you press **&lt;Shift + Esc&gt;** or **&lt;Insert&gt;** key.
 
 # Available key bindings
 ## Scroll
