@@ -12,3 +12,9 @@ This is Chrome extension for browsing like Vim.
 |Ctrl + u|Scroll up by half page|
 |Ctrl + f|Scroll down by one page|
 |Ctrl + b|Scroll up by one page|
+|gg|Scroll up to top of page|
+|Shift + g|Scroll down to bottom of page|
+|Shift + h|Move backward through the browsing history|
+|Shift + l|Move forward through the browsing history|
+|d|Close tab|
+|r|Reload page|
