@@ -29,7 +29,7 @@ This is Chrome extension for browsing like Vim.
 |---|---|
 |d|Close tab|
 |Ctrl + p|Go to the previous tab|
-|Ctrl + n|Go to the next tab|
+|Ctrl + n|Go to the next tab <br> To use this keybind, need setting|
 
 # Other
 |Key|Action|
