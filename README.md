@@ -1,6 +1,6 @@
 # Vimchro
-This is Chrome extensions for browsing like Vim.  
-This extensions override default shortcut of Chrome.  
+This is Google Chrome extensions for browsing like Vim.
+This extensions override default shortcut of Chrome.
 You can disable temporary this extensions, if you press **&lt;Shift + Esc&gt;** or **&lt;Insert&gt;** key.
 
 # Available key bindings
@@ -28,10 +28,10 @@ You can disable temporary this extensions, if you press **&lt;Shift + Esc&gt;** 
 |Key|Action|
 |---|---|
 |d|Close tab|
-|Ctrl + p|Go to the previous tab|
-|Ctrl + n|Go to the next tab. <br> To use this keybind, need setting.|
+|Ctrl + p|Go to the previous (left) tab|
+|Ctrl + n|Go to the next (right) tab. <br> To use this keybind, need setting.|
 
-# Other
+## Other
 |Key|Action|
 |---|---|
 |r|Reload page|
