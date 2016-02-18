@@ -3,6 +3,8 @@ This is Google Chrome extensions for browsing like Vim.
 This extensions override default shortcut of Chrome.  
 You can disable temporary this extensions, if you press **&lt;Shift + Esc&gt;** or **&lt;Insert&gt;** key.
 
+[日本語版の説明はこちら](./README_jp.md)
+
 # Available key bindings
 ## Scroll
 |Key|Action|
