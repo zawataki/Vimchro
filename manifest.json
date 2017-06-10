@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Vimchro",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "__MSG_appDesc__",
   "default_locale": "en",
   "icons": {
