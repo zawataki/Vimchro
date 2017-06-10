@@ -1,7 +1,8 @@
 # Vimchro
-This is Google Chrome extensions for browsing like Vim.  
+This is Google Chrome extension for browsing like Vim.  
 This extensions override default shortcut of Chrome.  
-You can disable temporary this extensions, if you press **&lt;Shift + Esc&gt;** or **&lt;Insert&gt;** key.
+You can disable temporary this extensions, if you press **&lt;Shift + Esc&gt;** or **&lt;Insert&gt;** key.  
+This extension is released in [Chrome Web Store](https://chrome.google.com/webstore/detail/vimchro/ldmkelbnjdchgboamnnmlpplmmbpifjh).
 
 [日本語版の説明はこちら](./README_jp.md)
 

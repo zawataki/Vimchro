@@ -1,7 +1,8 @@
 # Vimchro
 これは、Google ChromeでVim風のキーバインドでブラウジングするための拡張機能です。  
 この拡張機能は、Chromeのデフォルトのキーボード用ショートカットを上書きします。  
-**&lt;Shift + Esc&gt;** か **&lt;Insert&gt;** キーを押すと、一時的にこの拡張機能を無効にできます。
+**&lt;Shift + Esc&gt;** か **&lt;Insert&gt;** キーを押すと、一時的にこの拡張機能を無効にできます。  
+この拡張機能は[Chrome Web Store](https://chrome.google.com/webstore/detail/vimchro/ldmkelbnjdchgboamnnmlpplmmbpifjh)で公開しています。
 
 # 利用可能なキーバインド
 ## スクロール
