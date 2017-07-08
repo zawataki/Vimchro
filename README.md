@@ -46,10 +46,24 @@ This extension is released in [Chrome Web Store](https://chrome.google.com/webst
 |---|---|
 |d|Close tab|
 |Ctrl + p|Go to the previous (left) tab|
-|Ctrl + n|Go to the next (right) tab. <br> To use this keybind, need setting.|
+|Ctrl + n|Go to the next (right) tab. <br> To use this keybind, NEED [setting keybind](#how-to-setting-keybind).|
 
 ## Other
 |Key|Action|
 |---|---|
 |r|Reload page|
 |&lt;Shift + Esc&gt; or &lt;Insert&gt;|Disable temporary this extensions|
+
+# TODO
+* Disable keybind when editing text
+* Add new keybinds
+  * t -> open link in new tab)
+  * etc (If you have any requests, please create issue)
+
+# How to setting keybind
+1. Open `Keyboard shortcuts` in [Chrome extensions setting](chrome://settings/)
+![Capture1](capture/setting-keybind_1.png)
+2. Select `Send 'MoveNextTab' event to the extension` in Vimchro
+![Capture1](capture/setting-keybind_2.png)-
+3. Press Ctrl key and N key. then click `OK` button
+![Capture1](capture/setting-keybind_3.png)
