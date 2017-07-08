@@ -1,3 +1,17 @@
+# Contents
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Vimchro](#vimchro)
+- [Available key bindings](#available-key-bindings)
+  - [Scroll](#scroll)
+  - [Moving browsing history](#moving-browsing-history)
+  - [Tab](#tab)
+  - [Other](#other)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # Vimchro
 This is Google Chrome extension for browsing like Vim.  
 This extensions override default shortcut of Chrome.  
