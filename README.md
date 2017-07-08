@@ -9,6 +9,8 @@
   - [Moving browsing history](#moving-browsing-history)
   - [Tab](#tab)
   - [Other](#other)
+- [TODO](#todo)
+- [How to setting keybind](#how-to-setting-keybind)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
