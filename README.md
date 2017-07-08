@@ -32,7 +32,7 @@ This extension is released in [Chrome Web Store](https://chrome.google.com/webst
 |---|---|
 |d|Close tab|
 |Ctrl + p|Go to the previous (left) tab|
-|Ctrl + n|Go to the next (right) tab. <br> To use this keybind, need setting.|
+|Ctrl + n|Go to the next (right) tab. <br> To use this keybind, NEED [setting keybind](#how-to-setting-keybind).|
 
 ## Other
 |Key|Action|
